@@ -1,0 +1,95 @@
+/* style-login.css - Styling for Login Page */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body.login-page {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #e7c2fb, #a7eea6); /* nice pastel */
+    animation: fadeIn 2s ease;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.nav-brand {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Login Container */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    margin-top: 60px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Form Fields */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Button */
+.button {
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #acb6e5, #74ebd5);
+}
+
+/* Error Message */
+.error-message {
+    background: #ffcdd2;
+    color: #b71c1c;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GridMasters - Rules</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(to right, #74ebd5, #acb6e5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 40px 20px;
+            animation: fadeIn 2s ease;
+        }
+
+        h1, h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .rules-container, .team-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 800px;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            line-height: 1.8;
+            font-size: 18px;
+            color: #555;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        a.back-link {
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            background: linear-gradient(to right, #74ebd5, #acb6e5);
+            padding: 12px 25px;
+            color: white;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        a.back-link:hover {
+            background: linear-gradient(to right, #acb6e5, #74ebd5);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Rules of GridMasters</h1>
+    <h2>GridMasters is an interactive simulation based on Conway's Game of Life</h2>
+
+    <div class="rules-container">
+        <ul>
+            <li>Each cell can either be <strong>alive</strong> or <strong>dead</strong>.</li>
+            <li>Each cell interacts with its 8 neighboring cells.</li>
+            <li><strong>Any live cell</strong> with 2 or 3 live neighbors survives to the next generation.</li>
+            <li><strong>Any dead cell</strong> with exactly 3 live neighbors becomes a live cell (birth).</li>
+            <li>All other live cells die in the next generation (overpopulation or loneliness).</li>
+            <li>The rules repeat over generations, creating dynamic patterns over time.</li>
+            <li>Examples include still lifes, oscillators, spaceships, and glider guns.</li>
+        </ul>
+    </div>
+
+    <h2>Team Members and Contributions</h2>
+
+    <div class="team-container">
+        <p><strong>Shruthi Ledalla (002821933)</strong></p>
+        <ul>
+            <li>Implemented the Game of Life simulation logic including Start, Stop, Next, Reset, and pattern loading.</li>
+            <li>Created patterns such as Block, Boat, Beacon, Toad, Glider, and Gosper Glider Gun.</li>
+            <li>Handled database setup for user accounts and session recording in MySQL.</li>
+        </ul>
+
+        <p><strong>Anshu Budha chhetri (002831347)</strong></p>
+        <ul>
+            <li>Developed the login, registration, session management, and admin dashboard functionalities.</li>
+            <li>Designed the visual styling and layout for the home page, rules page, and overall project aesthetics.</li>
+            <li>Integrated frontend controls with backend session tracking (start/stop/save sessions).</li>
+        </ul>
+
+
+    </div>
+
+    <a href="home.html" class="back-link">← Back to Home</a>
+
+</body>
+</html>
+

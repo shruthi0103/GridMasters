@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GridMasters - Play</title>
+
+    <link rel="stylesheet" href="style-index.css">
+
+</head>
+<body>
+
+    <h1 class="mb-4">Welcome to GridMasters!</h1>
+
+    <div class="controls text-center my-3">
+        <button id="start" class="btn btn-success m-2">Start</button>
+        <button id="stop" class="btn btn-danger m-2">Stop</button>
+        <button id="next" class="btn btn-primary m-2">Next Generation</button>
+        <button id="plus23" class="btn btn-info m-2">+23 Generations</button>
+        <button id="reset" class="btn btn-warning m-2">Reset</button>
+
+        <select id="pattern" class="form-select d-inline w-auto ms-2">
+            <option value="">Select Pattern</option>
+            <!-- Still Life -->
+            <option value="block">Block</option>
+            <option value="boat">Boat</option>
+            <option value="beehive">Beehive</option>
+            <option value="loaf">Loaf</option>
+
+            <!-- Oscillators -->
+            <option value="blinker">Blinker</option>
+            <option value="beacon">Beacon</option>
+            <option value="toad">Toad</option>
+            <option value="pulsar">Pulsar</option>
+
+            <!-- Spaceships and Guns -->
+            <option value="glider">Glider</option>
+            <option value="gospergun">Gosper Glider Gun</option>
+        </select>
+    </div>
+
+    <div id="grid"></div>
+
+    <div class="mt-4">
+        <p>Generation: <span id="generation-count">0</span></p>
+        <p>Population: <span id="population-count">0</span></p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
